@@ -1,0 +1,57 @@
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+# PyTorch с поддержкой CUDA 12.4
+torch==2.5.0+cu124
+torchvision==0.20.0+cu124
+
+# Оптимизация
+xformers==0.0.28.post2
+accelerate==0.33.0
+bitsandbytes==0.44.0
+lion-pytorch==0.0.6
+pytorch-optimizer==3.5.0
+schedulefree==1.4
+prodigy-plus-schedule-free==1.9.0
+prodigyopt==1.1.2
+
+# Hugging Face + Diffusers
+transformers==4.44.0
+diffusers[torch]==0.25.0
+huggingface-hub==0.24.5
+safetensors==0.4.4
+
+# Обработка текста / изображений
+ftfy==6.1.1
+opencv-python==4.8.1.78
+einops==0.7.0
+pillow==9.0.0  # важно! realesrgan не любит pillow >10
+numpy<=2.0
+sentencepiece==0.2.0
+imagesize==1.4.1
+
+# UI + логи + графики
+tensorboard
+altair==4.2.2
+easygui==0.98.3
+toml==0.10.2
+voluptuous==0.13.1
+rich==13.7.0
+
+# Real-ESRGAN (и зависимые)
+realesrgan
+basicsr
+facexlib
+
+# FastAPI + сервер
+fastapi
+uvicorn
+pydantic
+python-multipart
+# Discord и Telegram боты
+discord.py
+pyTelegramBotAPI  # telebot
+python-telegram-bot==20.7  # если ты юзаешь ApplicationBuilder
+
+# PyQt (если используешь GUI)
+PyQt5
+PyQtWebEngine
